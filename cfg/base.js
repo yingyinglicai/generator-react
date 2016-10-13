@@ -2,7 +2,6 @@
 let path = require('path');
 let defaultSettings = require('./defaults');
 var autoprefixer = require('autoprefixer');
-var px2rem = require('postcss-px2rem');
 
 // Additional npm or bower modules to include in builds
 // Add all foreign plugins you may need into this array
@@ -48,8 +47,7 @@ module.exports = {
   postcss: function () {
     return [
       require('precss'),
-      require('autoprefixer'),
-      px2rem({remUnit: 75})
+      require('autoprefixer')
     ];
   }
 };

@@ -53,11 +53,19 @@ function getDefaultModules() {
         }
       },
       {
-        test: /\.(woff|woff2|ogg|svg)$/,
-        loader: 'file-loader',
-        query: {
-          name: "fonts/[name].[ext]"
-        }
+        test: /\.woff$/,
+        loader: "url-loader?prefix=font/&name=font/[name].[ext]&limit=5000&mimetype=application/font-woff"},
+      {
+        test: /\.ttf$/,
+        loader: "file-loader?prefix=font/&name=font/[name].[ext]"
+      },
+      {
+        test: /\.eot$/,
+        loader: "file-loader?prefix=font/&name=font/[name].[ext]"
+      },
+      {
+        test: /\.svg$/,
+        loader: "file-loader?prefix=font/&name=font/[name].[ext]"
       }
     ]
   }

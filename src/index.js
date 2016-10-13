@@ -2,7 +2,9 @@ import 'core-js/fn/object/assign';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/header/header.jsx';
+
 import 'normalize.css';
+import './public/style/iconfont.css';
 import './public/style/base.scss';
 
 
