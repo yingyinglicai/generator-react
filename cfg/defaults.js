@@ -38,7 +38,7 @@ function getDefaultModules() {
         loader: ExtractTextPlugin.extract("style", "css!postcss!sass")
       },
       {
-        test: /\.(png|jpg|gif)$/,
+        test: /\.(png|jpg|gif|ttf)$/,
         loader: 'url-loader',
         query: {
           limit: 8192,

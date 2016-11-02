@@ -1,14 +1,11 @@
-html {
-  font-size: 75px !important;
-}
 
 [data-dpr="1"] div {
-  font-size: 12px;
+  font-size: 24px;
 }
 [data-dpr="2"] div {
-  font-size: 24px;
+  font-size: 48px;
 }
 
 [data-dpr="3"] div {
-  font-size: 36px;
+  font-size: 72px;
 }

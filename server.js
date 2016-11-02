@@ -21,5 +21,6 @@ new WebpackDevServer(webpack(config), config.devServer)
     console.log(chalk.gray(' ----------------------------------------'))
     console.log('');
 
-    open('http://' + config.host + ':' + config.port + '/webpack-dev-server/');
+    open('http://' + config.host + ':' + config.port);
+    //open('http://' + config.host + ':' + config.port + '/webpack-dev-server/');
   });

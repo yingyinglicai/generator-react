@@ -5,8 +5,6 @@ const ifaces = require("os").networkInterfaces()
 /**
  * 获取本机ip地址
  */
-exports.ip = getIp()
-
 
 function getIp() {
   var ip = "127.0.0.1";
@@ -20,3 +18,7 @@ function getIp() {
   }
   return ip
 }
+
+exports.ip = getIp();
+
+
